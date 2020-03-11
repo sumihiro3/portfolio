@@ -9,6 +9,17 @@
       sm8
       md6
     >
+      <v-container fluid>
+        <h1 class="white--text">My Works</h1>
+        <v-row dense>
+            <v-col
+                v-for="work in works"
+                :key="work.name"
+            >
+              <WorkDetail :work="work" />
+            </v-col>
+        </v-row>
+    </v-container>
       <div class="text-center">
         <logo />
         <vuetify-logo />
@@ -81,11 +92,30 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import {Work} from "@/models/Work"
 
 @Component({
   components: {
     Logo: () => import("@/components/Logo.vue"),
-    VuetifyLogo: () => import("@/components/VuetifyLogo.vue")
+    VuetifyLogo: () => import("@/components/VuetifyLogo.vue"),
+    WorkDetail: () => import("@/components/WorkDetail.vue")
+  },
+  data() {
+    const works: Work[] = [
+      {
+        name: "LINE Things Drink Bar",
+        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+        url: "https://www.yahoo.co.jp",
+        releaseDate: "2019/01/01"
+      },
+      {
+        name: "家族のお手伝い帳",
+        src: "https://cdn.vuetifyjs.com/images/cards/road.jpg",
+        url: "https://www.line.co.jp",
+        releaseDate: "2018/11/11"
+      }
+    ]
+    return { works }
   }
 })
 
