@@ -63,7 +63,7 @@
       <!-- Webpage -->
       <v-tooltip bottom v-if="work.website_url">
         <template v-slot:activator="{on}">
-          <v-btn icon :href="work.website_url" target="_blank" v-on="on">
+          <v-btn icon :href="work.website_url" target="_blank" rel="noopener" v-on="on">
             <v-icon>mdi-home</v-icon>
           </v-btn>
         </template>
@@ -72,7 +72,7 @@
       <!-- Demo video -->
       <v-tooltip bottom v-if="work.demo_url">
         <template v-slot:activator="{on}">
-          <v-btn icon :href="work.demo_url" target="_blank" v-on="on">
+          <v-btn icon :href="work.demo_url" target="_blank" rel="noopener" v-on="on">
             <v-icon>mdi-video-vintage</v-icon>
           </v-btn>
         </template>
@@ -81,14 +81,14 @@
       <!-- Presentation slide -->
       <v-tooltip bottom v-if="work.presentation_url">
         <template v-slot:activator="{on}">
-          <v-btn icon :href="work.presentation_url" target="_blank" v-on="on">
+          <v-btn icon :href="work.presentation_url" target="_blank" rel="noopener" v-on="on">
             <v-icon>mdi-presentation-play</v-icon>
           </v-btn>
         </template>
         <span>Presentation slide</span>
       </v-tooltip>
       <!-- Share -->
-      <v-tooltip bottom v-if="work.presentation_url">
+      <v-tooltip bottom>
         <template v-slot:activator="{on}">
           <v-btn icon v-on="on">
             <v-icon>mdi-share</v-icon>

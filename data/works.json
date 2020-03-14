@@ -1,6 +1,6 @@
 [
     {
-        "name": "てぶらく",
+        "name": "てぶらく by チーム LUMONDE",
         "src": "https://sumihiro3.github.io/img/works/teburaku.png",
         "releaseDate": "2019/11/11",
         "description": [
@@ -67,7 +67,66 @@
         "presentation_url": "https://speakerdeck.com/sumihiro3/line-things-x-line-pay-dui-ying-line-things-drink-bar"
     },
     {
-        "name": "家族のお手伝い帳",
+        "name": "LINE Clova Drink Bar",
+        "src": "https://sumihiro3.github.io/img/works/LINEClovaDrinkBar.jpg",
+        "releaseDate": "2019/01/01",
+        "description": [
+            "LINE Clova Drink Bar は別名、怠惰なドリンクバーといいます。",
+            "暑い夏や、乾燥する冬は水分補給が重要ですが、仕事や勉強をしているとつい億劫になりがちですよね。そんな時に便利なのが「怠惰なドリンクバー」です。音声操作だけで、お好みのドリンクを抽出してくれるというスグレモノ！",
+            "しかも、話しかけたドリンクそのものが無かったときは、同種の飲み物に置き換えて注いでくれますよ。",
+            "例）麦茶が無くても、お茶と認識して在庫のある緑茶を注いでくれる など",
+            "さらに市販の銘柄でも認識してくれます。コーラがほしいけど、思わず「ペプシ！」と話しかけても大丈夫。ちゃんとコーラ飲料として認識して注いでくれます。"
+        ],
+        "role": [
+            "プロダクト構想",
+            "VUI デザイン",
+            "プロジェクト管理",
+            "サーバーサイド開発",
+            "ハードウェア開発"
+        ],
+        "prize": [
+            "ヒーローズ・リーグ 2019 VUI部門 Final"
+        ],
+        "tech": [
+            "Clova Extentions Kit",
+            "Python",
+            "Vue.js",
+            "AWS (Lambda, API Gateway)",
+            "obniz"
+        ],
+        "website_url": "https://protopedia.net/prototype/bf424cb7b0dea050a42b9739eb261a3a",
+        "demo_url": "https://vimeo.com/371067704",
+        "presentation_url": "https://speakerdeck.com/sumihiro3/line-clova-drink-bar-clova-sukirudedai-duo-ni-dorinkubawocao-zuo-suru"
+    },
+    {
+        "name": "どうぶつビンゴ",
+        "src": "https://sumihiro3.github.io/img/works/animal_bingo.png",
+        "releaseDate": "2019/11/11",
+        "description": [
+            "動物の名前を使ってビンゴゲームをするスキルだよ。",
+            "普通のビンゴと違って、あらかじめカードのマスに動物は書いてないよ。",
+            "コンピューターがランダムに決めた動物の配置（3マス×3マス）を予想して、動物の名前を言って縦・横・斜めいずれかのマスを埋めてビンゴを目指しましょう！",
+            "どんな動物が隠れているか分からないときは、Clova がヒントをくれるよ。",
+            "出来るだけ短い回数でビンゴを作って、高得点を目指してね！",
+            "友だちや家族などで、得点を競い合おう！"
+        ],
+        "role": [
+            "プロダクト構想",
+            "VUI デザイン",
+            "サーバーサイド開発"
+        ],
+        "prize": [
+            "LINE Clova Skill Awards 2019 子どもが使いたくなるスキル部門 最優秀賞"
+        ],
+        "tech": [
+            "Clova Extentions Kit",
+            "Python",
+            "AWS (Lambda, API Gateway, S3)"
+        ],
+        "website_url": "https://clova.line.me/clova-ai/skillstore/skill/com.tep-lab.skill.animal-bingo"
+    },
+    {
+        "name": "家族のお手伝い帳 by チーム家族愛",
         "src": "https://sumihiro3.github.io/img/works/kazokuno_otetsudai_cho.png",
         "releaseDate": "2018/11/11",
         "description": [
@@ -77,6 +136,7 @@
         ],
         "role": [
             "プロダクト構想",
+            "VUI デザイン",
             "開発リーダー",
             "プロジェクト管理",
             "サーバーサイド開発",
@@ -85,10 +145,10 @@
         "prize": [
             "LINE BOOT AWARDS 2018 ファミリー部門賞 / ロボスタ賞",
             "LINE Developer of the Month 2018.10",
-            "Mashup Awards 2018 VUI部門 ファイナリスト"
+            "Mashup Awards 2018 VUI部門 Final"
         ],
         "tech": [
-            "LINE Clova",
+            "Clova Extentions Kit",
             "LINE Messaging API",
             "LINE Front-end Framework",
             "Python",
@@ -98,5 +158,35 @@
         "website_url": "https://otetsudaicho.jimdofree.com/",
         "presentation_url": "https://speakerdeck.com/sumihiro3/jia-zu-falseoshou-chuan-izhang-by-timujia-zu-ai",
         "demo_url": "https://vimeo.com/298838180"
+    },
+    {
+        "name": "家族のお手伝い帳 by チーム❤アルフォート",
+        "src": "https://sumihiro3.github.io/img/works/YesNoLight.png",
+        "releaseDate": "2018/11/11",
+        "description": [
+            "Yes Noライトのコンセプトは、夫婦やカップルの不仲を解消し、少子化問題の解決と生産性の向上に貢献する健全な音声操作できるランプ",
+            "夫婦やカップルの仲は、いいに越したことはない！",
+            "子供がいなくても、パートナーと仲良くすれば仕事も勉強も頑張れる！",
+            "夜の気分を直接言わずにライトで伝えれば、二人とも傷つかない！",
+            "Yes Noライトに今夜の気分を設定すると、Philips hueがその気分の色に点灯してくれます。"
+        ],
+        "role": [
+            "開発リーダー",
+            "サーバーサイド開発"
+        ],
+        "prize": [
+            "Alexa スキルアワード 2018 Phillips Hue 賞",
+            "Alexa スキルアワード 2018 ハッカソン 大阪 Phillips Hue 賞"
+        ],
+        "tech": [
+            "Clova Extentions Kit",
+            "kintone API",
+            "Philips hue API",
+            "Python",
+            "AWS (Lambda, API Gateway, S3)"
+        ],
+        "website_url": "https://protopedia.net/prototype/b9f94c77652c9a76fc8a442748cd54bd",
+        "presentation_url": "https://goo.gl/ktZweP",
+        "demo_url": "https://www.youtube.com/watch?v=o6OnAnTsGko&feature=emb_logo"
     }
 ]
