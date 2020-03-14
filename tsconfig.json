@@ -3,6 +3,7 @@
         "target": "es2018",
         "module": "esnext",
         "experimentalDecorators": true,
+        "resolveJsonModule": true,
         "moduleResolution": "node",
         "lib": [
             "esnext",

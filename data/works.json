@@ -1,0 +1,102 @@
+[
+    {
+        "name": "てぶらく",
+        "src": "https://sumihiro3.github.io/img/works/teburaku.png",
+        "releaseDate": "2019/11/11",
+        "description": [
+            "『てぶらく』は、保育園に着替え等をたくさん持参する保護者の方々の手間を減らし、子育てを楽しんでもらうことを目的とした”保育園サブスクリプション・サービス”です。",
+            "共働き世帯が増加し続ける昨今、保護者への子育ての負担を少しでも減らすために、このサービスは誕生しました。",
+            "保護者が子どもの着替えなどを持参せず、必要な際に園にあるてぶらくの在庫から着替えなどを使っていただきます。",
+            "サービス基本料金は保育料に含まれるので、保護者は超過分のみをお支払いいただくという仕組みです。"
+        ],
+        "role": [
+            "開発リーダー",
+            "プロジェクト管理",
+            "サーバーサイド開発",
+            "フロントエンド開発"
+        ],
+        "prize": [
+            "ヒーローズリーグ2019 LINE ヒーロー",
+            "LINE Smart City ハッカソン 最優秀賞"
+        ],
+        "tech": [
+            "LINE Messaging API",
+            "LINE Front-end Framework",
+            "LINE Pay API",
+            "Python",
+            "Vue.js",
+            "Nuxt.js",
+            "AWS (Lambda, API Gateway, S3)"
+        ],
+        "website_url": "https://protopedia.net/prototype/6f4920ea25403ec77bee9efce43ea25e",
+        "demo_url": "https://vimeo.com/370857350",
+        "presentation_url": "https://speakerdeck.com/sumihiro3/bao-yu-yuan-sabusukuripusiyonsabisu-teburaku"
+    },
+    {
+        "name": "LINE Things Drink Bar",
+        "src": "https://sumihiro3.github.io/img/feature/LINEThingsDrinkBarOutlook.jpg",
+        "releaseDate": "2019/01/01",
+        "description": [
+            "LINE Things Drink Bar とは：",
+            "「LINE Things Drink Bar」は、LINE Pay での決済機能と、LINE アプリからハードウェアを操作できるIoT プラットフォームであるLINE Things に対応したジュースの自動販売機のプロトタイプです。",
+            "商品（ジュース）の選択から支払い（LINE Pay での決済）、ハードウェアへのジュース抽出の指示、購入後の抽選に至るすべてをLINE アプリ一つで操作できます。"
+        ],
+        "role": [
+            "プロダクト構想",
+            "開発リーダー",
+            "プロジェクト管理",
+            "サーバーサイド開発",
+            "フロントエンド開発",
+            "ハードウェア開発"
+        ],
+        "prize": [
+            "LINE Things Mini Award エンジニア部門 最優秀賞",
+            "GUGEN 2019 Final"
+        ],
+        "tech": [
+            "LINE Things",
+            "LINE Messaging API",
+            "LINE Front-end Framework",
+            "LINE Pay API",
+            "Python",
+            "Vue.js",
+            "Heroku",
+            "Arduino"
+        ],
+        "demo_url": "https://vimeo.com/370683492",
+        "presentation_url": "https://speakerdeck.com/sumihiro3/line-things-x-line-pay-dui-ying-line-things-drink-bar"
+    },
+    {
+        "name": "家族のお手伝い帳",
+        "src": "https://sumihiro3.github.io/img/works/kazokuno_otetsudai_cho.png",
+        "releaseDate": "2018/11/11",
+        "description": [
+            "「家族のお手伝い帳」は、子どもがスマートスピーカー（LINE Clova）にお手伝いを報告するとポイントが貯められるなど、お手伝いを続けてもらうための仕掛けを用意したスキルです。",
+            "お手伝いが良く出来ていれば評価してポイントを増やしたり、目標ポイント数とご褒美を設定したり、ポイント利用時に紙クーポンを発行したり、派手な効果音で盛り上げたり、お手伝いを進んで続けたくなる仕掛けを色々と用意しています。",
+            "淡々とお手伝いをしてもらうのではなく、貯めたポイントでどんなご褒美をあげるか、次の目標はどうするのかなどを家族で色々と会話していただき、働くということ、続けることの大切さなどを学ぶきっかけにしてただきたいいです。"
+        ],
+        "role": [
+            "プロダクト構想",
+            "開発リーダー",
+            "プロジェクト管理",
+            "サーバーサイド開発",
+            "フロントエンド開発"
+        ],
+        "prize": [
+            "LINE BOOT AWARDS 2018 ファミリー部門賞 / ロボスタ賞",
+            "LINE Developer of the Month 2018.10",
+            "Mashup Awards 2018 VUI部門 ファイナリスト"
+        ],
+        "tech": [
+            "LINE Clova",
+            "LINE Messaging API",
+            "LINE Front-end Framework",
+            "Python",
+            "chart.js",
+            "AWS (Lambda, API Gateway, S3)"
+        ],
+        "website_url": "https://otetsudaicho.jimdofree.com/",
+        "presentation_url": "https://speakerdeck.com/sumihiro3/jia-zu-falseoshou-chuan-izhang-by-timujia-zu-ai",
+        "demo_url": "https://vimeo.com/298838180"
+    }
+]
