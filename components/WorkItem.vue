@@ -13,7 +13,45 @@
       </v-list-item-avatar>
       <v-list-item-content>
         <v-list-item-title class="headline">{{ work.name }}</v-list-item-title>
-        <v-list-item-subtitle>作成日：{{ work.releaseDate }}</v-list-item-subtitle>
+        <v-list-item-subtitle>
+          <v-spacer></v-spacer>
+          <!-- Webpage -->
+          <v-tooltip bottom v-if="work.website_url">
+            <template v-slot:activator="{on}">
+              <v-btn icon :href="work.website_url" target="_blank" rel="noopener" v-on="on">
+                <v-icon>mdi-home</v-icon>
+              </v-btn>
+            </template>
+            <span>Webpage</span>
+          </v-tooltip>
+          <!-- Demo video -->
+          <v-tooltip bottom v-if="work.demo_url">
+            <template v-slot:activator="{on}">
+              <v-btn icon :href="work.demo_url" target="_blank" rel="noopener" v-on="on">
+                <v-icon>mdi-video-vintage</v-icon>
+              </v-btn>
+            </template>
+            <span>Demo video</span>
+          </v-tooltip>
+          <!-- Presentation slide -->
+          <v-tooltip bottom v-if="work.presentation_url">
+            <template v-slot:activator="{on}">
+              <v-btn icon :href="work.presentation_url" target="_blank" rel="noopener" v-on="on">
+                <v-icon>mdi-presentation-play</v-icon>
+              </v-btn>
+            </template>
+            <span>Presentation slide</span>
+          </v-tooltip>
+          <!-- Share -->
+          <v-tooltip bottom v-if="false">
+            <template v-slot:activator="{on}">
+              <v-btn icon v-on="on">
+                <v-icon>mdi-share</v-icon>
+              </v-btn>
+            </template>
+            <span>Share</span>
+          </v-tooltip>
+        </v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
     <v-img
@@ -33,6 +71,12 @@
         <v-expansion-panel>
           <v-expansion-panel-header>詳細（受賞・役割・利用技術）</v-expansion-panel-header>
           <v-expansion-panel-content>
+            <div>
+              <h4 class="pt-2">作成日</h4>
+              <ul>
+                <li>{{ work.releaseDate }}</li>
+              </ul>
+            </div>
             <!-- Prize -->
             <div v-if="work.prize">
               <h4 class="pt-2">受賞</h4>
@@ -58,45 +102,6 @@
         </v-expansion-panel>
       </v-expansion-panels>
     </v-card-text>
-    <v-card-actions>
-      <v-spacer></v-spacer>
-      <!-- Webpage -->
-      <v-tooltip bottom v-if="work.website_url">
-        <template v-slot:activator="{on}">
-          <v-btn icon :href="work.website_url" target="_blank" rel="noopener" v-on="on">
-            <v-icon>mdi-home</v-icon>
-          </v-btn>
-        </template>
-        <span>Webpage</span>
-      </v-tooltip>
-      <!-- Demo video -->
-      <v-tooltip bottom v-if="work.demo_url">
-        <template v-slot:activator="{on}">
-          <v-btn icon :href="work.demo_url" target="_blank" rel="noopener" v-on="on">
-            <v-icon>mdi-video-vintage</v-icon>
-          </v-btn>
-        </template>
-        <span>Demo video</span>
-      </v-tooltip>
-      <!-- Presentation slide -->
-      <v-tooltip bottom v-if="work.presentation_url">
-        <template v-slot:activator="{on}">
-          <v-btn icon :href="work.presentation_url" target="_blank" rel="noopener" v-on="on">
-            <v-icon>mdi-presentation-play</v-icon>
-          </v-btn>
-        </template>
-        <span>Presentation slide</span>
-      </v-tooltip>
-      <!-- Share -->
-      <v-tooltip bottom>
-        <template v-slot:activator="{on}">
-          <v-btn icon v-on="on">
-            <v-icon>mdi-share</v-icon>
-          </v-btn>
-        </template>
-        <span>Share</span>
-      </v-tooltip>
-    </v-card-actions>
   </v-card>
 </template>
 
