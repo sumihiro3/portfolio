@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Profile",
+        "href": "#Profile",
+        "icon": "mdi-home"
+    },
+    {
+        "title": "My Works",
+        "href": "#MyWorks",
+        "icon": "mdi-home"
+    },
+    {
+        "title": "Company Works",
+        "href": "#CompanyWorks",
+        "icon": "mdi-home"
+    }
+]

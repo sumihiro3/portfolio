@@ -1,0 +1,13 @@
+{
+    "name": "Sumihiro Kagawa",
+    "name_jp": "加川 澄廣",
+    "src": "/images/profile.jpg",
+    "bio": [
+        "株式会社Compass CTO、ピースミール・テクノロジー株式会社 シニア業務アナリスト、LINE API Expert",
+        "これまで、民間企業や公共での大小様々なシステム開発プロジェクトにおいて、システム企画からプロジェクトマネジメント、アーキテクト、プログラマーとシステム開発の全行程に携わってきました。",
+        "現職では、LINE Bot を活用したオンラインキャリアカウンセリングサービスの開発責任者として開発・運営に従事しています。",
+        "特にLINE API（LINE Messaging API, LINE Pay API, LINE Front-end Framework など）を利用したサービスの開発を得意としています。",
+        "近年は個人活動として、ハッカソンや開発コンテストへ積極的に参加しており、特にLINE API を活用した作品で多くの賞を受賞しています。",
+        "また、LINE API の開発者コミュニティ（LINE Developer Community, LINE Developer Group Kansai）をはじめ、多くのイベント運営、登壇、ハンズオン講師を担当しています。"
+    ]
+}

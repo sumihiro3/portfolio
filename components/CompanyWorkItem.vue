@@ -69,19 +69,12 @@
       </div>
       <v-expansion-panels flat>
         <v-expansion-panel>
-          <v-expansion-panel-header>詳細（受賞・役割・利用技術）</v-expansion-panel-header>
+          <v-expansion-panel-header>詳細（役割・利用技術）</v-expansion-panel-header>
           <v-expansion-panel-content>
             <div>
-              <h4 class="pt-2">作成日</h4>
+              <h4 class="pt-2">期間</h4>
               <ul>
                 <li>{{ work.releaseDate }}</li>
-              </ul>
-            </div>
-            <!-- Prize -->
-            <div v-if="work.prize">
-              <h4 class="pt-2">受賞</h4>
-              <ul>
-                <li v-for="p in work.prize" :key="p">{{ p }}</li>
               </ul>
             </div>
             <!-- Role -->
