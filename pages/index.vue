@@ -9,10 +9,6 @@
       sm8
       md6
     >
-      <v-container fluid id="Profile" class="pt-10">
-        <h1 class="white--text">Profile</h1>
-        <ProfileView :profile="profile" />
-      </v-container>
       <v-container fluid id="MyWorks" class="pt-10">
         <h1 class="white--text">My Works</h1>
         <v-row dense>
@@ -35,6 +31,23 @@
             </v-col>
         </v-row>
       </v-container>
+      <v-container fluid id="Profile" class="pt-10">
+        <h1 class="white--text">Profile</h1>
+        <ProfileView :profile="profile" />
+      </v-container>
+      <v-container fluid id="Contacts" class="pt-10">
+        <h1 class="white--text">Contacts</h1>
+        <div>
+          <p class="title">お問い合わせは、SNS でお願いいたします。</p>
+        </div>
+        <span
+          v-for="contact in contacts"
+          :key="contact.title"
+        >
+          <ContactView :contact="contact" />
+        </span>
+
+      </v-container>
     </v-flex>
   </v-layout>
 </template>
@@ -43,9 +56,11 @@
 import { Component, Vue } from "vue-property-decorator";
 import { Work } from "@/models/Work";
 import { Profile } from "@/models/Profile";
+import { Contact } from "@/models/Contact";
 import Works from "@/data/works.json";
 import CompanyWorks from "@/data/company_works.json";
 import MyProfile from "@/data/profile.json";
+import Contacts from "@/data/contacts.json";
 
 @Component({
   components: {
@@ -53,13 +68,15 @@ import MyProfile from "@/data/profile.json";
     VuetifyLogo: () => import("@/components/VuetifyLogo.vue"),
     ProfileView: () => import("@/components/Profile.vue"),
     WorkItem: () => import("@/components/WorkItem.vue"),
-    CompanyWorkItem: () => import("@/components/CompanyWorkItem.vue")
+    CompanyWorkItem: () => import("@/components/CompanyWorkItem.vue"),
+    ContactView: () => import("@/components/Contact.vue")
   },
   data() {
     const profile: Profile = MyProfile;
     const works: Work[] = Works;
     const company_works: Work[] = CompanyWorks;
-    return { profile, works, company_works }
+    const contacts: Contact[] = Contacts;
+    return { profile, works, company_works, contacts }
   }
 })
 
