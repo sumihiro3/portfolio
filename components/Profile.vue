@@ -1,12 +1,14 @@
 <template>
-  <v-card class="mx-auto">
-    <v-row align="top" class="fill-height">
-      <v-col cols="4">
+  <v-container>
+    <v-row>
+      <v-col>
         <v-avatar class="profile" color="grey" size="256">
           <v-img :src="profile.src"></v-img>
         </v-avatar>
       </v-col>
-      <v-col cols="8">
+    </v-row>
+    <v-row>
+      <v-col>
         <div class="headline pb-4">{{ profile.name }} （{{ profile.name_jp }}）</div>
         <div>
           <p class="text-justify pb-2"
@@ -29,7 +31,8 @@
         
       </v-col>
     </v-row>
-  </v-card>
+  </v-container>
+  <!-- </v-card> -->
 </template>
 
 
