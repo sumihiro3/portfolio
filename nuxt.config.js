@@ -1,65 +1,113 @@
-import colors from 'vuetify/es5/util/colors'
+import colors from "vuetify/es5/util/colors";
 
 export default {
-  mode: 'universal',
+  mode: "universal",
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
-    titleTemplate: '%s - ' + process.env.npm_package_name,
-    title: process.env.npm_package_name || '',
+    htmlAttrs: {
+      prefix: "og: http://ogp.me/ns#"
+    },
+    titleTemplate: "%s | Sumihiro Kagawa's Portfolio",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Sumihiro Kagawa's Portfolio"
+      },
+      {
+        hid: "og:site_name",
+        property: "og:site_name",
+        content: "Sumihiro Kagawa's Portfolio"
+      },
+      { hid: "og:type", property: "og:type", content: "website" },
+      {
+        hid: "og:url",
+        property: "og:url",
+        content: "https://sumihiro3.netlify.com"
+      },
+      {
+        hid: "og:title",
+        property: "og:title",
+        content: "Sumihiro Kagawa's Portfolio"
+      },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content:
+          "Sumihiro Kagawa's Portfolio"
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "https://sumihiro3.netlify.com/images/ogp.png"
+      },
+      {
+        hid: "twitter:card",
+        name: "twitter:card",
+        content: "summary_large_image"
+      },
+      {
+        hid: "twitter:site",
+        name: "twitter:site",
+        content: "@sumihiro3"
+      },
+      {
+        hid: "twitter:creator",
+        name: "twitter:creator",
+        content: "@sumihiro3"
+      },
+      {
+        hid: "twitter:image",
+        name: "twitter:image",
+        content: "https://sumihiro3.netlify.com/images/ogp.png"
+      }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
     ]
   },
   /*
-  ** Customize the progress-bar color
-  */
-  loading: { color: '#fff' },
+   ** Customize the progress-bar color
+   */
+  loading: { color: "#fff" },
   /*
-  ** Global CSS
-  */
-  css: [
-  ],
+   ** Global CSS
+   */
+  css: [],
   /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
+   ** Plugins to load before mounting the App
+   */
+  plugins: [],
   /*
-  ** Nuxt.js dev-modules
-  */
-  buildModules: [
-    '@nuxt/typescript-build',
-    '@nuxtjs/vuetify',
-  ],
+   ** Nuxt.js dev-modules
+   */
+  buildModules: ["@nuxt/typescript-build", "@nuxtjs/vuetify"],
   /*
-  ** Nuxt.js modules
-  */
+   ** Nuxt.js modules
+   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
-    '@nuxtjs/pwa',
+    "@nuxtjs/axios",
+    "@nuxtjs/pwa",
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv',
+    "@nuxtjs/dotenv"
   ],
   /*
-  ** Axios module configuration
-  ** See https://axios.nuxtjs.org/options
-  */
-  axios: {
-  },
+   ** Axios module configuration
+   ** See https://axios.nuxtjs.org/options
+   */
+  axios: {},
   /*
-  ** vuetify module configuration
-  ** https://github.com/nuxt-community/vuetify-module
-  */
+   ** vuetify module configuration
+   ** https://github.com/nuxt-community/vuetify-module
+   */
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
+    customVariables: ["~/assets/variables.scss"],
     theme: {
       dark: true,
       themes: {
@@ -84,18 +132,20 @@ export default {
       }
     }
   },
+  generate: {
+    fallback: true
+  },
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     filenames: {
-      app: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
-      chunk: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js'
+      app: ({ isDev }) => (isDev ? "[name].[hash].js" : "[chunkhash].js"),
+      chunk: ({ isDev }) => (isDev ? "[name].[hash].js" : "[chunkhash].js")
     },
     /*
-    ** You can extend webpack config here
-    */
-    extend (config, ctx) {
-    }
+     ** You can extend webpack config here
+     */
+    extend(config, ctx) {}
   }
-}
+};
