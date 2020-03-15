@@ -69,7 +69,7 @@
       </div>
       <v-expansion-panels flat>
         <v-expansion-panel>
-          <v-expansion-panel-header>詳細（役割・利用技術）</v-expansion-panel-header>
+          <v-expansion-panel-header>詳細（期間・役割 など）</v-expansion-panel-header>
           <v-expansion-panel-content>
             <div>
               <h4 class="pt-2">期間</h4>
