@@ -39,6 +39,7 @@
         <h1 class="white--text">Contacts</h1>
         <div>
           <p class="title">お問い合わせは、SNS でお願いいたします。</p>
+          <p class="title">友達リクエスト頂く場合は「ポートフォリオサイトを見た」というメッセージを頂ますよう、お願いいたします。</p>
         </div>
         <span
           v-for="contact in contacts"
